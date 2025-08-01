@@ -1,0 +1,48 @@
+.scroll-container {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(357deg);
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 10s linear infinite;
+  padding-block: 5px;
+  background-color: #ffffff;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 2rem;
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-64{
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.running_texts{
+  width: 100vw; 
+  height: 150px; 
+  background-color: #FFB783; 
+  overflow: hidden;
+}

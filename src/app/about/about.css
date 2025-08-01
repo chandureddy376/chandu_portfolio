@@ -1,0 +1,80 @@
+::ng-deep .p-button-info{
+    width: 316px;
+    height: 52px;
+    margin-top: 1rem !important;
+    border-radius: 40px !important;
+    background-color: #F57920 !important;
+    border: 1px solid #F57920 !important;
+    font-size: 26px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.about_container{
+    background-color: #F2F4F7;
+    width:100vw;
+}
+
+.name_size{
+    font-size: 48px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.exep_pro_detail{
+    color: #98A2B3;
+    border: 1px solid #98A2B3;
+}
+
+.font-22{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon_style{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F2F4F7;
+    border: 1px solid #F2F4F7;
+}
+
+.font-48{
+    font-size: 48px;
+}
+
+.font-18{
+    font-size: 18px;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.comma_img{
+    width: 47px; 
+    height: 36px;
+}
+
+.lorem_styles{
+    background-color: #171717;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.social_media_icons{
+    position: absolute;
+    left: 175px;
+    top: 350px;
+    padding-block: 25px;
+    background: #ffffff;
+    width: 40%;
+}
+
+.color_orange{
+    color: #F57920;
+}

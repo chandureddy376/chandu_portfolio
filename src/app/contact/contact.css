@@ -1,0 +1,62 @@
+::ng-deep .p-button-danger{
+    width: 202px;
+    height: 62px;
+    margin-top: 1rem !important;
+    border-radius: 40px !important;
+    background-color: #F57920 !important;
+    border: 1px solid #F57920 !important;
+    font-size: 26px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-64{
+    font-size: 64px;
+    font-weight: 600;
+    color: #FCFCFD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-40{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-18{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color_white{
+    color: #FCFCFD;
+}
+
+.font-16{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+::ng-deep .p-button-secondary {
+    background: #F57920 !important;
+    border: 1px solid #F57920 !important;
+    color: #ffffff !important;
+}
+
+.email_box{
+    width: 250px !important;
+    border-top-left-radius: 14px !important;
+    border-bottom-left-radius: 14px !important;
+    padding-inline: 10px;
+}
+
+::ng-deep .p-inputgroupaddon {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
