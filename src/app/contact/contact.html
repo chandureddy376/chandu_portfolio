@@ -47,9 +47,9 @@
             <div class="text-orange-500 font-20 font-poppins">Get the latest information</div>
             <div>
                 <p-inputgroup>
-                    <input class="email_box" pInputText placeholder="Email Address" style="width: 250px;" />
+                    <input class="email_box" pInputText placeholder="Email Address" [(ngModel)]="enquiredMail" style="width: 250px;background-color: #ffffff;" />
                     <p-inputgroup-addon>
-                        <p-button icon="pi pi-send" severity="secondary" />
+                        <p-button icon="pi pi-send" severity="secondary" (onClick)="sendEmail()"/>
                     </p-inputgroup-addon>
                 </p-inputgroup>
             </div>
@@ -76,3 +76,5 @@
         </div>
     </div>
 </div>
+
+  <p-toast />

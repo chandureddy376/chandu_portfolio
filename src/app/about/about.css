@@ -10,8 +10,9 @@
 }
 
 .about_container{
-    background-color: #F2F4F7;
+    background-color: #F2F4F7 !important;
     width:100vw;
+    color:#171717;
 }
 
 .name_size{
