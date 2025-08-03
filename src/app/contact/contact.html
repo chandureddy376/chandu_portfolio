@@ -5,7 +5,7 @@
             Lets Connect there
         </div>
         <div class="col-4 text-center">
-            <p-button label="Hire me" severity="danger" icon="pi pi-arrow-up-right" iconPos="right" />
+            <p-button label="Hire me" severity="danger" icon="pi pi-arrow-up-right" iconPos="right" (onClick)="openHireModal()"/>
         </div>
     </div>
     <div class="col-12">
@@ -76,5 +76,29 @@
         </div>
     </div>
 </div>
+
+<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe" [style]="{ width: '30rem' }">
+    <form class="font-poppins" [formGroup]="hireForm" (ngSubmit)="submitHireForm()">
+        <div class="flex items-center gap-4 mb-4 flex-column">
+            <label for="username" class="font-semibold w-24">Username</label>
+            <input pInputText id="username" formControlName="username" class="flex-auto bg-color" placeholder="Enter the Name" autocomplete="off" />
+        </div>
+
+        <div class="flex items-center gap-4 mb-4  flex-column">
+            <label for="number" class="font-semibold w-24">Number</label>
+            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false" placeholder="Enter the Number" style="background: #FFF1E7 !important;;"/>
+        </div>
+
+        <div class="flex items-center gap-4 mb-8  flex-column">
+            <label for="email" class="font-semibold w-24">Email</label>
+            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off" placeholder="Enter the Mail-id"/>
+        </div>
+
+        <div class="flex justify-end gap-2">
+            <button pButton label="Cancel" type="button" (click)="closeHireModal()" severity="contrast"></button>
+            <button pButton label="Save" type="submit" severity="secondary" [disabled]="hireForm.invalid"></button>
+        </div>
+    </form>
+</p-dialog>
 
   <p-toast />

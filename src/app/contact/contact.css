@@ -60,3 +60,8 @@
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 }
+
+.bg-color {
+    background: #ffffff !important;
+    color: #141313 !important
+}

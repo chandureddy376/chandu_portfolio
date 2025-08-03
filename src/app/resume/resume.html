@@ -1,4 +1,5 @@
-<div class="col-12 pt-5 flex px-0 align-items-center" style="width: 100vw;background-color: #F2F4F7 !important;color:#171717; ">
+<div class="col-12 pt-5 flex px-0 align-items-center"
+    style="width: 100vw;background-color: #F2F4F7 !important;color:#171717; ">
     <div class="col-4 pl-5">
         <div class="font-poppins hire_me">Why <span class="text-orange-500">Hire me?</span></div>
         <div class="font-poppins work_details pt-2">I’m a dedicated Angular developer with hands-on experience building
@@ -9,7 +10,7 @@
             <div class="project_text font-poppins">Projects Completed</div>
         </div>
         <div class="pt-3">
-            <p-button label="Hire Me" severity="help" />
+            <p-button label="Hire Me" severity="help" (onClick)="openHireModal()" />
         </div>
     </div>
     <div class="col-8 flex">
@@ -57,3 +58,30 @@
         </div>
     </div>
 </div>
+
+<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe" [style]="{ width: '30rem' }">
+    <form class="font-poppins" [formGroup]="hireForm" (ngSubmit)="submitHireForm()">
+        <div class="flex items-center gap-4 mb-4 flex-column">
+            <label for="username" class="font-semibold w-24">Username</label>
+            <input pInputText id="username" formControlName="username" class="flex-auto bg-color" placeholder="Enter the Name" autocomplete="off" />
+        </div>
+
+        <div class="flex items-center gap-4 mb-4  flex-column">
+            <label for="number" class="font-semibold w-24">Number</label>
+            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false" placeholder="Enter the Number" style="background: #FFF1E7 !important;;"/>
+        </div>
+
+        <div class="flex items-center gap-4 mb-8  flex-column">
+            <label for="email" class="font-semibold w-24">Email</label>
+            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off" placeholder="Enter the Mail-id"/>
+        </div>
+
+        <div class="flex justify-end gap-2">
+            <button pButton label="Cancel" type="button" (click)="closeHireModal()" severity="contrast"></button>
+            <button pButton label="Save" type="submit" severity="secondary" [disabled]="hireForm.invalid"></button>
+        </div>
+    </form>
+</p-dialog>
+
+
+  <p-toast />
