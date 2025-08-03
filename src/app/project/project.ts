@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-project',
-  imports: [CarouselModule],
+  imports: [CarouselModule, DialogModule],
   templateUrl: './project.html',
   styleUrl: './project.css'
 })
@@ -31,6 +32,8 @@ export class Project {
 
   activeIndex: number = 0;
   intervalId: any;
+  isVisible1Modal: boolean = false;
+  isVisible2Modal: boolean = false;
 
   ngOnInit() {
     this.intervalId = setInterval(() => {
@@ -42,5 +45,13 @@ export class Project {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
+  }
+
+  open1Modal() {
+    this.isVisible1Modal = true;
+  }
+
+  open2Modal() {
+    this.isVisible2Modal = true;
   }
 }

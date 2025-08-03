@@ -41,7 +41,30 @@ export class Resume {
       return;
     }
 
-    console.log('Form Data:', this.hireForm.value);
+    const formData = this.hireForm.value;
+
+    const templateParams = {
+      username: formData.username,
+      number: formData.number,
+      email: formData.email
+    };
+
+     emailjs.send(
+      'service_rk32sy8',
+      'template_hz5rstx',
+      templateParams,
+      'zofwWtiXDqaNQCCdM'
+    )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+            this.messageService.add({ severity: 'success', summary: 'Details Received', detail: 'Thanks! Your Details was received successfully.' });
+        },
+        (error) => {
+            this.messageService.add({ severity: 'error', summary: 'Details error', detail: 'Sending failed. Try again.' });
+          console.error('FAILED...', error);
+        }
+      );
 
     // Optionally send data using EmailJS, API, etc.
 
