@@ -49,3 +49,36 @@
   z-index: 1;
   padding-inline: 4px;
 }
+
+.mob_experience_text{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.font_18{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.font_12{
+  font-size: 12px;
+}
+
+.font_16{
+  font-size: 16px;
+}
+
+.mob_timeline-line{
+   position: absolute;
+  top: 20px;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: 2px;
+  border-left: 2px dashed #000;
+  z-index: 1;
+  padding-inline:0px;
+}
+
+.color_lightgrey{
+  color: #98A2B3;
+}

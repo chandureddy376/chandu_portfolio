@@ -1,16 +1,17 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuItem } from 'primeng/api';
 import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { SplitButtonModule } from 'primeng/splitbutton';
 
 
 @Component({
   selector: 'app-navbar',
   imports: [
     CommonModule,
-    MenubarModule
+    MenubarModule,
+    SplitButtonModule
   ],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
@@ -82,5 +83,23 @@ export class Navbar {
     }
   }
 
+
+  isMobileMenuOpen: boolean = false;
+
+toggleMobileMenu() {
+  this.isMobileMenuOpen = !this.isMobileMenuOpen;
+}
+
+closeMobileMenu() {
+  this.isMobileMenuOpen = false;
+}
+
+@HostListener('document:click', ['$event'])
+onDocumentClick(event: MouseEvent) {
+  const target = event.target as HTMLElement;
+  if (!target.closest('.menubar_div')) {
+    this.isMobileMenuOpen = false;
+  }
+}
 
 }

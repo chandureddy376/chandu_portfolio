@@ -89,3 +89,19 @@
     background: #F57920 !important;
     border-radius: 50px !important;
 }
+
+.menu_items li.active {
+    color: #F57920 !important;
+    font-weight: 600;
+    background: #171717 !important;
+    border-radius: 0px !important;
+}
+
+.menu_items{
+    width: 90% !important;
+    background: #171717;
+    top: 30px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+}

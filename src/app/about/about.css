@@ -7,6 +7,7 @@
     border: 1px solid #F57920 !important;
     font-size: 26px !important;
     font-family: 'Poppins', sans-serif !important;
+    color: #F2F4F7;
 }
 
 .about_container{
@@ -40,8 +41,8 @@
 .icon_style{
     padding: 10px;
     border-radius: 50px;
-    background-color: #F2F4F7;
-    border: 1px solid #F2F4F7;
+    background-color: #1413130D;
+    border: 1px solid #1413130D;
 }
 
 .font-48{
@@ -78,4 +79,61 @@
 
 .color_orange{
     color: #F57920;
+}
+
+.mob_about_container{
+    background-color: #F2F4F7 !important;
+    width:100vw;
+    color:#171717;
+}
+
+.font_16{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mob_comma_img{
+    width: 15px;
+    height: 11.5px;
+}
+
+.font_12{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mob_lorem_styles{
+    background-color: #171717;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.mob_social_media_icons{
+    position: absolute;
+    left: 96px;
+    top: 235px;
+    padding-block: 10px;
+    background: #ffffff;
+    width: 50%;
+}
+
+.font_34{
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.font_14{
+    font-size: 14px;
+}
+
+.mob_btn ::ng-deep .p-button-info{
+    width: 194px;
+    height: 40px;
+    margin-top: 1rem !important;
+    border-radius: 40px !important;
+    background-color: #F57920 !important;
+    border: 1px solid #F57920 !important;
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #F2F4F7;
 }

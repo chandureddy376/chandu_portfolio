@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    color: #171717 !important;
 }
 
 .hello-tail {
@@ -123,13 +124,14 @@
     padding-block: 20px;
     border: 1px solid #FFFFFF1A;
     border-radius: 60px;
-    background-color: #D0D5DD15;
+    background-color: #C9C9C940;
     font-family: 'Poppins', sans-serif;
 }
 
 ::ng-deep .p-button-warn {
     border-radius: 40px !important;
     font-size: 2rem !important;
+    color: #ffffff !important;
 }
 /* ===================== Responsive ===================== */
 
@@ -211,4 +213,66 @@
     .back_pick {
         width: 80vw;
     }
+}
+
+.mobile_main_container{
+    width: 100%;
+}
+
+.mob_hello_container{
+    padding-top: 2rem;
+}  
+
+.mobile_hello-tail {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 40px;
+    height: auto;
+}
+
+.mobile_title_name {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font_12{
+    font-size: 12px;
+    font-weight: 500;
+    color: #344054;
+    width: 100%;
+}
+
+.mob_experience_text{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.image_div{
+    width: 100%;
+    position: relative;
+    top: -40px;
+}
+
+.mob_download_btn{
+    position: absolute;
+    bottom: -25px;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 50px;
+    background-color: #C9C9C940;
+    font-family: "Poppins", sans-serif;
+}
+
+.mob_download_btn ::ng-deep .p-button-warn {
+    border-radius: 40px !important;
+    font-size: 24px !important;
+    color: #ffffff !important;
+}
+
+.mob_comma_img{
+    width: 19px;
+    height: 19px;
 }

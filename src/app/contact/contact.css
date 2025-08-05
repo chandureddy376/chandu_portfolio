@@ -65,3 +65,13 @@
     background: #ffffff !important;
     color: #141313 !important
 }
+
+.mob_contact_main_container{
+    width: 100%;
+    background: #272727;  
+}
+
+.font_14{
+    font-size: 14px;
+    font-weight: 400;
+}

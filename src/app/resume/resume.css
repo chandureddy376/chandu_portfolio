@@ -3,8 +3,8 @@
     color: #DF5F02 !important;
     border: 1px solid #DF5F02 !important;
     border-radius: 50px !important;
-    width: 170px;
-    height: 50px;
+    width: 235px;
+    height: 68px;
     font-size: 32px;
     font-family: 'Poppins', sans-serif !important;
 }
@@ -61,4 +61,34 @@
 ::ng-deep .p-inputnumber-input {
     background: #ffffff !important;
     color: #141313 !important
+}
+
+.mob_resume_container{
+    width: 100%;
+    background-color: #F2F4F7 !important;
+    color:#171717;
+}
+
+.mob_hire_me{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mob_work_details {
+    color: #98A2B3;
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.mob_hire_me_btn ::ng-deep .p-button-help {
+    width: 226px;
+    height: 50px;
+}
+
+.mob_card_des{
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
 }

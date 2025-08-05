@@ -1,4 +1,4 @@
-<div class="col-12 flex justify-content-center font-poppins menubar_div p-0">
+<div class="col-12 justify-content-center font-poppins menubar_div p-0 hidden md:flex">
     <!-- <p-menubar [model]="items" class="custom-menubar flex justify-content-between align-items-center">
     </p-menubar> -->
 
@@ -10,4 +10,19 @@
         </ul>
     </nav>
 
+</div>
+
+<div class="col-12 flex justify-content-end items-center font-poppins menubar_div py-2 px-3 md:hidden">
+    <button pButton (click)="toggleMobileMenu()"
+        style="background: #171717;padding: 0.5rem;border-radius: 6px;border-color: #171717;">
+        <i class="pi pi-bars text-2xl text-orange-500"></i>
+    </button>
+
+    <ul class="absolute menu_items list-none text-white z-50 flex flex-col transition-all duration-300"
+        *ngIf="isMobileMenuOpen">
+        <li *ngFor="let item of navItems" class="py-3 w-full text-start border-b border-gray-700"
+            [class.active]="activeSection === item.id" (click)="onNavClick(item.id); closeMobileMenu()">
+            {{ item.label }}
+        </li>
+    </ul>
 </div>

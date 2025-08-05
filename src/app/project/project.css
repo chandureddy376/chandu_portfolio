@@ -51,3 +51,37 @@
   background-color: #FFB783; 
   overflow: hidden;
 }
+
+.project_container{
+  background-color: #ffffff !important;
+  color:#171717;
+}
+
+.font_30{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mob_running_texts{
+    width: 100%;
+    height: 88px;
+    background-color: #DF5F02;
+    overflow: hidden;
+}
+
+.mob_skill_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 2rem;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.mob_scroll_track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 10s linear infinite;
+  padding-block: 1px;
+  background-color: #ffffff;
+}
