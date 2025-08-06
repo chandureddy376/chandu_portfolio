@@ -1,10 +1,10 @@
-.name_text{
+.name_text {
     color: #F57920;
     font-size: 34px;
     font-weight: 400;
 }
 
-.p-menubar{
+.p-menubar {
     background: #171717 !important;
     border-radius: 50px !important;
     width: fit-content;
@@ -14,18 +14,18 @@
     padding-inline-start: 20px !important;
 }
 
-.p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
+.p-menubar-item:not(.p-disabled)>.p-menubar-item-content:hover {
     color: #F57920 !important;
     background: none !important;
 }
 
-.p-menubar-item.p-focus > .p-menubar-item-content {
+.p-menubar-item.p-focus>.p-menubar-item-content {
     color: #ffffff !important;
     background: #F57920 !important;
     border-radius: 50px !important;
 }
 
-.p-menubar-item-content{
+.p-menubar-item-content {
     border-radius: 50px !important;
     font-size: 20px !important;
     color: #ffffff !important;
@@ -38,50 +38,50 @@
     /* padding-inline: 20px !important; */
 }
 
-.font-poppins{
+.font-poppins {
     font-family: 'Poppins', sans-serif;
 }
 
 
-::ng-deep .p-menubar .active-link > a {
-  font-weight: bold;
-  color: #F57920 !important;
-  border-bottom: 2px solid #F57920;
+::ng-deep .p-menubar .active-link>a {
+    font-weight: bold;
+    color: #F57920 !important;
+    border-bottom: 2px solid #F57920;
 }
 
-.menubar_div{
+.menubar_div {
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding-inline: 2rem;
-  background: #171717 !important;
-  border-radius: 50px !important;
-  width: fit-content;
-  padding-block: 0.5rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-inline: 2rem;
+    background: #171717 !important;
+    border-radius: 50px !important;
+    width: fit-content;
+    padding-block: 0.5rem;
 }
 
 .nav-list li {
-  cursor: pointer;
-  font-size: 18px;
-  color: #ffffff;
-  position: relative;
-  padding-block: 0.5rem;
-  padding-inline:1.5rem;
-  transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .nav-list li.active {
@@ -97,7 +97,7 @@
     border-radius: 0px !important;
 }
 
-.menu_items{
+.menu_items {
     width: 90% !important;
     background: #171717;
     top: 30px;

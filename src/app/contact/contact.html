@@ -1,11 +1,12 @@
-<div class="col-12 mt-6 pb-5 hidden md:block"
+<div class="col-12 mt-6 pb-5 hidden md:block absolute"
     style="width: 100vw;background: #272727;border-top-left-radius: 24px;border-top-right-radius: 24px;">
     <div class="col-12 flex">
         <div class="col-8 font-64">
             Lets Connect there
         </div>
         <div class="col-4 text-center">
-            <p-button label="Hire me" severity="danger" icon="pi pi-arrow-up-right" iconPos="right" (onClick)="openHireModal()"/>
+            <p-button label="Hire me" severity="danger" icon="pi pi-arrow-up-right" iconPos="right"
+                (onClick)="openHireModal()" />
         </div>
     </div>
     <div class="col-12">
@@ -47,9 +48,10 @@
             <div class="text-orange-500 font-20 font-poppins">Get the latest information</div>
             <div>
                 <p-inputgroup>
-                    <input class="email_box" pInputText placeholder="Email Address" [(ngModel)]="enquiredMail" style="width: 250px;background-color: #ffffff;" />
+                    <input class="email_box" pInputText placeholder="Email Address" [(ngModel)]="enquiredMail"
+                        style="width: 250px;background-color: #ffffff;color: #171717;" />
                     <p-inputgroup-addon>
-                        <p-button icon="pi pi-send" severity="secondary" (onClick)="sendEmail()"/>
+                        <p-button icon="pi pi-send" severity="secondary" (onClick)="sendEmail()" />
                     </p-inputgroup-addon>
                 </p-inputgroup>
             </div>
@@ -72,27 +74,36 @@
                 <a class="no no-underline color_white cursor-pointer"
                     href="https://www.facebook.com/chandu.cherry.5872?rdid=we1MTmdpsVJ2rHFF&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GKuvWb87n%2F#"
                     target="_blank"><i class="pi pi-facebook font-20"></i></a>
-                <a class="no no-underline color_white cursor-pointer" href="https://wa.me/919071127457" target="_blank"><i class="pi pi-whatsapp font-20"></i></a>
+                <a class="no no-underline color_white cursor-pointer" href="https://wa.me/919071127457"
+                    target="_blank"><i class="pi pi-whatsapp font-20"></i></a>
             </span>
         </div>
     </div>
+
+    <div class="contact-loader-container" *ngIf="isLoader">
+        <p-progress-spinner ariaLabel="loading" />
+    </div>
 </div>
 
-<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe" [style]="{ width: '30rem' }">
+<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe"
+    [style]="{ width: '30rem' }">
     <form class="font-poppins" [formGroup]="hireForm" (ngSubmit)="submitHireForm()">
         <div class="flex items-center gap-4 mb-4 flex-column">
             <label for="username" class="font-semibold w-24">Username</label>
-            <input pInputText id="username" formControlName="username" class="flex-auto bg-color" placeholder="Enter the Name" autocomplete="off" />
+            <input pInputText id="username" formControlName="username" class="flex-auto bg-color"
+                placeholder="Enter the Name" autocomplete="off" />
         </div>
 
         <div class="flex items-center gap-4 mb-4  flex-column">
             <label for="number" class="font-semibold w-24">Number</label>
-            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false" placeholder="Enter the Number" style="background: #FFF1E7 !important;;"/>
+            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false"
+                placeholder="Enter the Number" style="background: #FFF1E7 !important;;" />
         </div>
 
         <div class="flex items-center gap-4 mb-8  flex-column">
             <label for="email" class="font-semibold w-24">Email</label>
-            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off" placeholder="Enter the Mail-id"/>
+            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off"
+                placeholder="Enter the Mail-id" />
         </div>
 
         <div class="flex justify-end gap-2">
@@ -102,9 +113,9 @@
     </form>
 </p-dialog>
 
-  <p-toast />
+<p-toast position="bottom-right" key="br"/>
 
-  <div class="col-12 py-4 px-3 md:hidden mob_contact_main_container font-poppins">
+<div class="col-12 py-4 px-3 md:hidden mob_contact_main_container font-poppins absolute">
     <!-- <div class="col-12 flex">
         <div class="col-8 font-64">
             Lets Connect there
@@ -133,7 +144,8 @@
                     target="_blank"><i class="pi pi-github font-20"></i></a>
                 <a class="no no-underline color_white cursor-pointer" href="https://wa.me/919071127457"
                     target="_blank"><i class="pi pi-whatsapp font-20"></i></a>
-                <a class="no-underline color_white cursor-pointer" href="tel:+919071127457"> <i class="pi pi-phone font-20"></i></a>    
+                <a class="no-underline color_white cursor-pointer" href="tel:+919071127457"> <i
+                        class="pi pi-phone font-20"></i></a>
             </span>
         </div>
 
@@ -165,14 +177,17 @@
             <div class="text-orange-500 font-20 font-poppins font-semibold">Get the latest information</div>
             <div>
                 <p-inputgroup>
-                    <input class="email_box" pInputText placeholder="Email Address" [(ngModel)]="enquiredMail" style="width: 250px;background-color: #ffffff;" />
+                    <input class="email_box" pInputText placeholder="Email Address" [(ngModel)]="enquiredMail"
+                        style="width: 250px;background-color: #ffffff;color: #171717;" />
                     <p-inputgroup-addon>
-                        <p-button icon="pi pi-send" severity="secondary" (onClick)="sendEmail()"/>
+                        <p-button icon="pi pi-send" severity="secondary" (onClick)="sendEmail()" />
                     </p-inputgroup-addon>
                 </p-inputgroup>
             </div>
         </div>
+
+        <div class="contact-loader-container" *ngIf="isLoader">
+            <p-progress-spinner ariaLabel="loading" />
+        </div>
     </div>
 </div>
-
-  

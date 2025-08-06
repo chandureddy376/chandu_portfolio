@@ -1,46 +1,46 @@
-.service-main{
+.service-main {
   width: 100vw;
   background-color: #ffffff !important;
-  color:#171717;
+  color: #171717;
 }
 
-.experience_text{
-  font-size: 64px; 
+.experience_text {
+  font-size: 64px;
   font-weight: 500;
 }
 
-.font-poppins{
-    font-family: 'Poppins', sans-serif;
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
-.font-40{
+.font-40 {
   font-size: 40px;
   font-weight: 500;
 }
 
-.font-24{
+.font-24 {
   font-size: 24px;
   color: #98A2B3;
 }
 
-.color_grey{
+.color_grey {
   color: #344054;
 }
 
 
 .timeline-dot {
-    border: 2px dashed #000;
-    border-radius: 50%;
-    background-color: #fff;
-    z-index: 2;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 2px dashed #000;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 2;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-line {
- position: absolute;
+  position: absolute;
   top: 20px;
   bottom: 20px;
   transform: translateX(-50%);
@@ -50,35 +50,35 @@
   padding-inline: 4px;
 }
 
-.mob_experience_text{
+.mob_experience_text {
   font-size: 30px;
   font-weight: 500;
 }
 
-.font_18{
+.font_18 {
   font-size: 18px;
   font-weight: 500;
 }
 
-.font_12{
+.font_12 {
   font-size: 12px;
 }
 
-.font_16{
+.font_16 {
   font-size: 16px;
 }
 
-.mob_timeline-line{
-   position: absolute;
+.mob_timeline-line {
+  position: absolute;
   top: 20px;
   bottom: 20px;
   transform: translateX(-50%);
   width: 2px;
   border-left: 2px dashed #000;
   z-index: 1;
-  padding-inline:0px;
+  padding-inline: 0px;
 }
 
-.color_lightgrey{
+.color_lightgrey {
   color: #98A2B3;
 }

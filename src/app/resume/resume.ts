@@ -11,23 +11,23 @@ import { ToastModule } from 'primeng/toast';
 
 @Component({
   selector: 'app-resume',
-  imports: [ButtonModule, DialogModule, ReactiveFormsModule,InputTextModule,InputNumberModule,ToastModule],
+  imports: [ButtonModule, DialogModule, ReactiveFormsModule, InputTextModule, InputNumberModule, ToastModule],
   templateUrl: './resume.html',
   styleUrl: './resume.css',
-   providers: [MessageService]
+  providers: [MessageService]
 })
 export class Resume {
 
-  constructor(private fb: FormBuilder,private messageService: MessageService) { }
+  constructor(private fb: FormBuilder, private messageService: MessageService) { }
 
   isVisibleHireMe: boolean = false;
   hireForm!: FormGroup;
 
   ngOnInit() {
     this.hireForm = this.fb.group({
-      username: ['', Validators.required,Validators.pattern(/^[a-zA-Z\s]{2,50}$/)],
+      username: ['', Validators.required, Validators.pattern(/^[a-zA-Z\s]{2,50}$/)],
       number: [null, [Validators.required, Validators.pattern(/^\d{10}$/)]],
-      email: ['', [Validators.required, Validators.email,Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]]
+      email: ['', [Validators.required, Validators.email, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]]
     });
   }
 
@@ -49,7 +49,7 @@ export class Resume {
       email: formData.email
     };
 
-     emailjs.send(
+    emailjs.send(
       'service_rk32sy8',
       'template_hz5rstx',
       templateParams,
@@ -57,12 +57,10 @@ export class Resume {
     )
       .then(
         (response) => {
-          console.log('SUCCESS!', response.status, response.text);
-            this.messageService.add({ severity: 'success', summary: 'Details Received', detail: 'Thanks! Your Details was received successfully.' });
+          this.messageService.add({ severity: 'success', summary: 'Details Received', detail: 'Thanks! Your Details was received successfully.', key: 'br' });
         },
         (error) => {
-            this.messageService.add({ severity: 'error', summary: 'Details error', detail: 'Sending failed. Try again.' });
-          console.error('FAILED...', error);
+          this.messageService.add({ severity: 'error', summary: 'Details error', detail: 'Sending failed. Try again.', key: 'br' });
         }
       );
 

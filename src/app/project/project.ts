@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { DialogModule } from 'primeng/dialog';
+import { TagModule } from 'primeng/tag';
 
 @Component({
   selector: 'app-project',
-  imports: [CarouselModule, DialogModule],
+  imports: [CarouselModule, DialogModule, TagModule],
   templateUrl: './project.html',
   styleUrl: './project.css'
 })
@@ -23,18 +24,22 @@ export class Project {
     { name: 'Product 10', image: 'assets/report_creation.png' },
   ];
 
-  //   products = [
-  //   { name: 'Product 1', image: 'assets/Screenshot 2025-08-05 221546' },
-  //   { name: 'Product 2', image: 'assets/Screenshot 2025-08-05 223051' },
-  //   { name: 'Product 3', image: 'assets/Screenshot 2025-08-05 223154' },
-  //   { name: 'Product 4', image: 'assets/Screenshot 2025-08-05 223310' },
-  //   { name: 'Product 5', image: 'assets/Screenshot 2025-08-05 223432' },
-  //   { name: 'Product 6', image: 'assets/Screenshot 2025-08-05 223432' },
-  //   { name: 'Product 7', image: 'assets/Screenshot 2025-08-05 223540' },
-  //   { name: 'Product 8', image: 'assets/Screenshot 2025-08-05 223919' },
-  //   { name: 'Product 9', image: 'assets/Screenshot 2025-08-05 224024' },
-  //   { name: 'Product 10', image: 'assets/Screenshot 2025-08-05 224308' },
-  // ];
+  sitecrm = [
+    { name: 'Product 0', image: 'assets/login.png' },
+    { name: 'Product 1', image: 'assets/Dashboard.png' },
+    { name: 'Product 2', image: 'assets/fresh_leads.png' },
+    { name: 'Product 3', image: 'assets/visit_dashboard.png' },
+    { name: 'Product 4', image: 'assets/property_price_list.png' },
+    { name: 'Product 5', image: 'assets/details_page.png' },
+    { name: 'Product 6', image: 'assets/deatils_whatsapp.png' },
+    { name: 'Product 7', image: 'assets/visit_panel.png' },
+    { name: 'Product 8', image: 'assets/inventory.png' },
+    { name: 'Product 9', image: 'assets/block_inventory.png' },
+    { name: 'Product 10', image: 'assets/edit_inventory.png' },
+    { name: 'Product 11', image: 'assets/call_insights.png' },
+    { name: 'Product 12', image: 'assets/call_report.png' },
+    { name: 'Product 13', image: 'assets/monthly_report.png' }
+  ];
 
   responsiveOptions: any[] = [
     {
@@ -60,9 +65,9 @@ export class Project {
       this.activeIndex = (this.activeIndex + 1) % this.Kanilebettu.length;
     }, 3000);
 
-    // this.intervalId = setInterval(() => {
-    //   this.activeIndex = (this.activeIndex + 1) % this.products.length;
-    // }, 3000);
+    this.intervalId = setInterval(() => {
+      this.activeIndex = (this.activeIndex + 1) % this.sitecrm.length;
+    }, 3000);
   }
 
   ngOnDestroy(): void {

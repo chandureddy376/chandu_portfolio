@@ -12,10 +12,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [ButtonModule, InputGroupModule, InputGroupAddonModule, RouterModule, FormsModule, ToastModule, DialogModule, InputTextModule, InputNumberModule, ReactiveFormsModule],
+  imports: [ButtonModule, InputGroupModule, InputGroupAddonModule, RouterModule, FormsModule, ToastModule, DialogModule, InputTextModule, InputNumberModule, ReactiveFormsModule,ProgressSpinnerModule,CommonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
   providers: [MessageService]
@@ -26,6 +28,7 @@ export class Contact {
   isVisibleHireMe: boolean = false;
   hireForm!: FormGroup;
   enquiredMail: string = '';
+  isLoader:boolean=false;
 
   @Output() sectionNavigate = new EventEmitter<string>();
 
@@ -72,28 +75,29 @@ export class Contact {
   }
 
   sendEmail() {
-    console.log(this.enquiredMail)
     if (!this.isValidEmail(this.enquiredMail)) {
-      this.messageService.add({ severity: 'error', summary: 'Email', detail: 'Please a Valid E-Mail id' });
+      this.messageService.add({ severity: 'error', summary: 'Email', detail: 'Please a Valid E-Mail id', key: 'br' });
       return;
     }
+
+    this.isLoader = true;
 
     const templateParams = {
       user_email: this.enquiredMail,
       name: this.enquiredMail,
       title: 'Protfolio Enquiry'
     };
-    console.log(templateParams)
     emailjs.send(
       'service_rk32sy8',
       'template_4waj1af',
       templateParams,
       'zofwWtiXDqaNQCCdM'
     ).then(() => {
-      this.messageService.add({ severity: 'success', summary: 'Email Received', detail: 'Thanks! Your Mail was received successfully.' });
+       this.isLoader = false;
+      this.messageService.add({ severity: 'success', summary: 'Email Received', detail: 'Thanks! Your Mail was received successfully.', key: 'br' });
       this.enquiredMail = '';
     }).catch((error) => {
-      this.messageService.add({ severity: 'error', summary: 'Email error', detail: 'Sending failed. Try again.' });
+      this.messageService.add({ severity: 'error', summary: 'Email error', detail: 'Sending failed. Try again.', key: 'br' });
     });
   }
 

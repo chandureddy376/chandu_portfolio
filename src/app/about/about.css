@@ -1,4 +1,4 @@
-::ng-deep .p-button-info{
+::ng-deep .p-button-info {
     width: 316px;
     height: 52px;
     margin-top: 1rem !important;
@@ -10,65 +10,65 @@
     color: #F2F4F7;
 }
 
-.about_container{
+.about_container {
     background-color: #F2F4F7 !important;
-    width:100vw;
-    color:#171717;
+    width: 100vw;
+    color: #171717;
 }
 
-.name_size{
+.name_size {
     font-size: 48px;
 }
 
-.font-24{
+.font-24 {
     font-size: 24px;
 }
 
-.exep_pro_detail{
+.exep_pro_detail {
     color: #98A2B3;
     border: 1px solid #98A2B3;
 }
 
-.font-22{
+.font-22 {
     font-size: 22px;
     font-weight: 500;
 }
 
-.font-poppins{
+.font-poppins {
     font-family: 'Poppins', sans-serif;
 }
 
-.icon_style{
+.icon_style {
     padding: 10px;
     border-radius: 50px;
     background-color: #1413130D;
     border: 1px solid #1413130D;
 }
 
-.font-48{
+.font-48 {
     font-size: 48px;
 }
 
-.font-18{
+.font-18 {
     font-size: 18px;
 }
 
-.font-20{
+.font-20 {
     font-size: 20px;
 }
 
-.comma_img{
-    width: 47px; 
+.comma_img {
+    width: 47px;
     height: 36px;
 }
 
-.lorem_styles{
+.lorem_styles {
     background-color: #171717;
     color: #ffffff;
     border-radius: 6px;
 }
 
-.social_media_icons{
+.social_media_icons {
     position: absolute;
     left: 175px;
     top: 350px;
@@ -77,38 +77,38 @@
     width: 40%;
 }
 
-.color_orange{
+.color_orange {
     color: #F57920;
 }
 
-.mob_about_container{
+.mob_about_container {
     background-color: #F2F4F7 !important;
-    width:100vw;
-    color:#171717;
+    width: 100vw;
+    color: #171717;
 }
 
-.font_16{
+.font_16 {
     font-size: 16px;
     font-weight: 500;
 }
 
-.mob_comma_img{
+.mob_comma_img {
     width: 15px;
     height: 11.5px;
 }
 
-.font_12{
+.font_12 {
     font-size: 12px;
     font-weight: 400;
 }
 
-.mob_lorem_styles{
+.mob_lorem_styles {
     background-color: #171717;
     color: #ffffff;
     border-radius: 10px;
 }
 
-.mob_social_media_icons{
+.mob_social_media_icons {
     position: absolute;
     left: 96px;
     top: 235px;
@@ -117,16 +117,16 @@
     width: 50%;
 }
 
-.font_34{
+.font_34 {
     font-size: 34px;
     font-weight: 500;
 }
 
-.font_14{
+.font_14 {
     font-size: 14px;
 }
 
-.mob_btn ::ng-deep .p-button-info{
+.mob_btn ::ng-deep .p-button-info {
     width: 194px;
     height: 40px;
     margin-top: 1rem !important;

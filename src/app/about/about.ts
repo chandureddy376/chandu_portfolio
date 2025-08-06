@@ -10,10 +10,10 @@ import { ButtonModule } from 'primeng/button';
 export class About {
 
   downloadResume() {
-  const link = document.createElement('a');
-  link.href = 'assets/Chandu_BC_Resume_updated2.pdf';
-  link.download = 'Chandu_Resume.pdf';
-  link.click();
-}
+    const link = document.createElement('a');
+    link.href = 'assets/Chandu_BC_Resume_updated2.pdf';
+    link.download = 'Chandu_Resume.pdf';
+    link.click();
+  }
 
 }

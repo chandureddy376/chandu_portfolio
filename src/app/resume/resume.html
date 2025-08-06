@@ -59,21 +59,25 @@
     </div>
 </div>
 
-<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe" [style]="{ width: '30rem' }">
+<p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe"
+    [style]="{ width: '30rem' }">
     <form class="font-poppins" [formGroup]="hireForm" (ngSubmit)="submitHireForm()">
         <div class="flex items-center gap-4 mb-4 flex-column">
             <label for="username" class="font-semibold w-24">Username</label>
-            <input pInputText id="username" formControlName="username" class="flex-auto bg-color" placeholder="Enter the Name" autocomplete="off" />
+            <input pInputText id="username" formControlName="username" class="flex-auto bg-color"
+                placeholder="Enter the Name" autocomplete="off" />
         </div>
 
         <div class="flex items-center gap-4 mb-4  flex-column">
             <label for="number" class="font-semibold w-24">Number</label>
-            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false" placeholder="Enter the Number" style="background: #FFF1E7 !important;;"/>
+            <p-inputnumber formControlName="number" inputId="withoutgrouping" [maxlength]="10" [useGrouping]="false"
+                placeholder="Enter the Number" style="background: #FFF1E7 !important;;" />
         </div>
 
         <div class="flex items-center gap-4 mb-8  flex-column">
             <label for="email" class="font-semibold w-24">Email</label>
-            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off" placeholder="Enter the Mail-id"/>
+            <input pInputText id="email" formControlName="email" class="flex-auto bg-color" autocomplete="off"
+                placeholder="Enter the Mail-id" />
         </div>
 
         <div class="flex justify-end gap-2">
@@ -83,12 +87,13 @@
     </form>
 </p-dialog>
 
-  <p-toast />
+<p-toast position="bottom-right" key="br" />
 
-  <div class="col-12 py-5 px-3 align-items-center md:hidden mob_resume_container">
+<div class="col-12 py-5 px-3 align-items-center md:hidden mob_resume_container">
     <div class="col-12 pl-5">
         <div class="font-poppins mob_hire_me text-center">Why <span class="text-orange-500">Hire me?</span></div>
-        <div class="font-poppins mob_work_details pt-1">I’m a dedicated Angular developer with hands-on experience building
+        <div class="font-poppins mob_work_details pt-1">I’m a dedicated Angular developer with hands-on experience
+            building
             responsive, user-friendly web apps. I follow a practical, results-driven process from planning to launch,
             ensuring high-quality output every step of the way.</div>
         <div class="pt-1 text-center">

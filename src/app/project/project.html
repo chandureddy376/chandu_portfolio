@@ -23,7 +23,7 @@
 
         <div class="col-6">
             <!-- <h1 class="m-0 text-center font-poppins">2st Project</h1> -->
-            <p-carousel [value]="Kanilebettu" [numVisible]="1" [numScroll]="1" [showNavigators]="false"
+            <p-carousel [value]="sitecrm" [numVisible]="1" [numScroll]="1" [showNavigators]="false"
                 [showIndicators]="false" class="cursor-pointer" [responsiveOptions]="responsiveOptions"
                 [autoplayInterval]="3000">
                 <ng-template let-product #item>
@@ -88,7 +88,7 @@
 <p-dialog header="Vsnap Technology Solutions pvt Ltd" class="font-poppins font_16" [(visible)]="isVisible2Modal"
     [modal]="true" [position]="position" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
     [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
-    <p-carousel [value]="Kanilebettu" [numVisible]="1" [numScroll]="1" [showNavigators]="true" [showIndicators]="false"
+    <p-carousel [value]="sitecrm" [numVisible]="1" [numScroll]="1" [showNavigators]="true" [showIndicators]="false"
         class="cursor-pointer" (onClik)="open2Modal()" [responsiveOptions]="responsiveOptions"
         [autoplayInterval]="3000">
         <ng-template let-product #item>
@@ -126,7 +126,7 @@
         </div>
 
         <div class="col-12 p-0">
-            <p-carousel [value]="Kanilebettu" [numVisible]="1" [numScroll]="1" [showNavigators]="false"
+            <p-carousel [value]="sitecrm" [numVisible]="1" [numScroll]="1" [showNavigators]="false"
                 [showIndicators]="false" class="cursor-pointer" [responsiveOptions]="responsiveOptions"
                 [autoplayInterval]="3000">
                 <ng-template let-product #item>

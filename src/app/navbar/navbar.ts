@@ -86,20 +86,20 @@ export class Navbar {
 
   isMobileMenuOpen: boolean = false;
 
-toggleMobileMenu() {
-  this.isMobileMenuOpen = !this.isMobileMenuOpen;
-}
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 
-closeMobileMenu() {
-  this.isMobileMenuOpen = false;
-}
-
-@HostListener('document:click', ['$event'])
-onDocumentClick(event: MouseEvent) {
-  const target = event.target as HTMLElement;
-  if (!target.closest('.menubar_div')) {
+  closeMobileMenu() {
     this.isMobileMenuOpen = false;
   }
-}
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    if (!target.closest('.menubar_div')) {
+      this.isMobileMenuOpen = false;
+    }
+  }
 
 }

@@ -1,11 +1,11 @@
-.font_style{
+.font_style {
     font-size: 20px;
     font-weight: 500;
     color: #344054;
     font-family: 'Poppins', sans-serif;
 }
 
-.main_container{
+.main_container {
     background-color: #ffffff !important;
     color: #171717;
 }
@@ -56,34 +56,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.outer_img_div{
+.outer_img_div {
     width: 100%;
     top: 140px;
     font-family: 'Poppins', sans-serif;
-}   
+}
 
-.inner_img_div{
+.inner_img_div {
     width: 95%;
 }
 
-.star_size{
+.star_size {
     font-size: 25px;
 }
 
-.font-20{
+.font-20 {
     font-size: 20px;
 }
 
-.color_black{
+.color_black {
     color: #171717;
 }
 
-.comma_img{
+.comma_img {
     height: 36px;
     width: 36px;
 }
 
-.experience_text{
+.experience_text {
     font-size: 47px !important;
     font-weight: 700 !important;
 }
@@ -111,13 +111,13 @@
 /* Background Image */
 .back_pick {
     width: 100vw;
-    max-width:100vw ;
+    max-width: 100vw;
     height: 46vh;
     border-radius: 0cap;
 }
 
 
-.download_btn{
+.download_btn {
     position: absolute;
     bottom: 20px;
     padding-inline: 20px;
@@ -133,6 +133,7 @@
     font-size: 2rem !important;
     color: #ffffff !important;
 }
+
 /* ===================== Responsive ===================== */
 
 @media (max-width: 1024px) {
@@ -215,13 +216,13 @@
     }
 }
 
-.mobile_main_container{
+.mobile_main_container {
     width: 100%;
 }
 
-.mob_hello_container{
+.mob_hello_container {
     padding-top: 2rem;
-}  
+}
 
 .mobile_hello-tail {
     position: absolute;
@@ -237,25 +238,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.font_12{
+.font_12 {
     font-size: 12px;
     font-weight: 500;
     color: #344054;
     width: 100%;
 }
 
-.mob_experience_text{
+.mob_experience_text {
     font-size: 20px !important;
     font-weight: 700 !important;
 }
 
-.image_div{
+.image_div {
     width: 100%;
     position: relative;
     top: -40px;
 }
 
-.mob_download_btn{
+.mob_download_btn {
     position: absolute;
     bottom: -25px;
     padding-inline: 5px;
@@ -272,7 +273,7 @@
     color: #ffffff !important;
 }
 
-.mob_comma_img{
+.mob_comma_img {
     width: 19px;
     height: 19px;
 }

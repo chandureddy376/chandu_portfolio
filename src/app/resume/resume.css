@@ -63,13 +63,13 @@
     color: #141313 !important
 }
 
-.mob_resume_container{
+.mob_resume_container {
     width: 100%;
     background-color: #F2F4F7 !important;
-    color:#171717;
+    color: #171717;
 }
 
-.mob_hire_me{
+.mob_hire_me {
     font-size: 30px;
     font-weight: 600;
 }
@@ -85,10 +85,23 @@
     height: 50px;
 }
 
-.mob_card_des{
+.mob_card_des {
     padding-inline: 0.5rem;
     padding-block: 0.5rem;
     border: 1px solid white;
     background-color: white;
     border-radius: 8px;
+}
+
+.contact-loader-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(176, 170, 170, 0.5);
 }
