@@ -13,9 +13,9 @@
   background-color: #ffffff;
 }
 
-.bg-color{
+.bg-color {
   background-color: #F2F4F7 !important;
-  color:#171717
+  color: #171717
 }
 
 .skill-item {
@@ -31,42 +31,43 @@
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
 
-.font-poppins{
-    font-family: 'Poppins', sans-serif;
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
-.font-64{
+.font-64 {
   font-size: 64px;
   font-weight: 600;
 }
 
-.running_texts{
-  width: 100vw; 
-  height: 150px; 
-  background-color: #FFB783; 
+.running_texts {
+  width: 100vw;
+  height: 150px;
+  background-color: #FFB783;
   overflow: hidden;
 }
 
-.project_container{
+.project_container {
   background-color: #ffffff !important;
-  color:#171717;
+  color: #171717;
 }
 
-.font_30{
+.font_30 {
   font-size: 30px;
   font-weight: 600;
 }
 
-.mob_running_texts{
-    width: 100%;
-    height: 88px;
-    background-color: #DF5F02;
-    overflow: hidden;
+.mob_running_texts {
+  width: 100%;
+  height: 88px;
+  background-color: #DF5F02;
+  overflow: hidden;
 }
 
 .mob_skill_item {
@@ -84,4 +85,26 @@
   animation: scroll-left 10s linear infinite;
   padding-block: 1px;
   background-color: #ffffff;
+}
+
+
+::ng-deep .p-dialog-title {
+  font-size: 20px !important;
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  ::ng-deep .p-dialog-title {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ::ng-deep .p-dialog-header {
+    padding-inline: 0.5rem !important;
+  }
+
+  ::ng-deep .p-dialog-content {
+    padding-inline: 0.5rem !important;
+  }
 }
