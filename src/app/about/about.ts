@@ -11,7 +11,7 @@ export class About {
 
   downloadResume() {
     const link = document.createElement('a');
-    link.href = 'assets/Chandu_BC_Resume_updated2.pdf';
+    link.href = 'assets/Chandu_Resume_port.pdf';
     link.download = 'Chandu_Resume.pdf';
     link.click();
   }

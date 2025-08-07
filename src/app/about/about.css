@@ -68,15 +68,6 @@
     border-radius: 6px;
 }
 
-.social_media_icons {
-    position: absolute;
-    left: 175px;
-    top: 350px;
-    padding-block: 25px;
-    background: #ffffff;
-    width: 40%;
-}
-
 .color_orange {
     color: #F57920;
 }
@@ -136,4 +127,18 @@
     font-size: 14px !important;
     font-family: 'Poppins', sans-serif !important;
     color: #F2F4F7;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.social_media_icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   padding-block: 25px;
+    background: #ffffff;
 }

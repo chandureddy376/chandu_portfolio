@@ -8,10 +8,12 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { MessageService } from 'primeng/api';
 import emailjs from 'emailjs-com';
 import { ToastModule } from 'primeng/toast';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
-  imports: [ButtonModule, DialogModule, ReactiveFormsModule, InputTextModule, InputNumberModule, ToastModule],
+  imports: [ButtonModule, DialogModule, ReactiveFormsModule, InputTextModule, InputNumberModule, ToastModule,ProgressSpinnerModule,CommonModule],
   templateUrl: './resume.html',
   styleUrl: './resume.css',
   providers: [MessageService]
@@ -22,6 +24,7 @@ export class Resume {
 
   isVisibleHireMe: boolean = false;
   hireForm!: FormGroup;
+  isLoader:boolean=false;
 
   ngOnInit() {
     this.hireForm = this.fb.group({
@@ -41,6 +44,8 @@ export class Resume {
       return;
     }
 
+     this.isLoader = true;
+
     const formData = this.hireForm.value;
 
     const templateParams = {
@@ -57,9 +62,11 @@ export class Resume {
     )
       .then(
         (response) => {
+           this.isLoader = false;
           this.messageService.add({ severity: 'success', summary: 'Details Received', detail: 'Thanks! Your Details was received successfully.', key: 'br' });
         },
         (error) => {
+           this.isLoader = false;
           this.messageService.add({ severity: 'error', summary: 'Details error', detail: 'Sending failed. Try again.', key: 'br' });
         }
       );

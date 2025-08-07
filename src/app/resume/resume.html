@@ -1,4 +1,4 @@
-<div class="col-12 pt-5  px-0 align-items-center hidden md:flex"
+<div class="col-12 pt-5  px-0 align-items-center hidden md:flex relative"
     style="width: 100vw;background-color: #F2F4F7 !important;color:#171717; ">
     <div class="col-4 pl-5">
         <div class="font-poppins hire_me">Why <span class="text-orange-500">Hire me?</span></div>
@@ -57,6 +57,10 @@
             </div>
         </div>
     </div>
+
+    <div class="contact-loader-container" *ngIf="isLoader">
+        <p-progress-spinner ariaLabel="loading" />
+    </div>
 </div>
 
 <p-dialog class="font-poppins" header="Hire Me" [modal]="true" [(visible)]="isVisibleHireMe"
@@ -89,7 +93,7 @@
 
 <p-toast position="bottom-right" key="br" />
 
-<div class="col-12 py-5 px-3 align-items-center md:hidden mob_resume_container">
+<div class="col-12 py-5 px-3 align-items-center md:hidden mob_resume_container relative">
     <div class="col-12 pl-5">
         <div class="font-poppins mob_hire_me text-center">Why <span class="text-orange-500">Hire me?</span></div>
         <div class="font-poppins mob_work_details pt-1">I’m a dedicated Angular developer with hands-on experience
@@ -145,5 +149,8 @@
             </div>
         </div>
 
+    </div>
+    <div class="contact-loader-container" *ngIf="isLoader">
+        <p-progress-spinner ariaLabel="loading" />
     </div>
 </div>
