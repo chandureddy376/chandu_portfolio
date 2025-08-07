@@ -94,7 +94,7 @@ export class Contact {
       'zofwWtiXDqaNQCCdM'
     ).then(() => {
        this.isLoader = false;
-      this.messageService.add({ severity: 'success', summary: 'Email Received', detail: 'Thanks! Your Mail was received successfully.', key: 'br' });
+      this.messageService.add({ severity: 'success', summary: 'Email Received', detail: 'Thanks! Your Mail was received successfully.', key: 'br'});
       this.enquiredMail = '';
     }).catch((error) => {
       this.messageService.add({ severity: 'error', summary: 'Email error', detail: 'Sending failed. Try again.', key: 'br' });

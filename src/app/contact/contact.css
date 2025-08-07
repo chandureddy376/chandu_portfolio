@@ -88,3 +88,9 @@
   z-index: 999;
   background-color: rgba(176, 170, 170, 0.5);
 }
+
+@media (min-width: 100px) and (max-width: 600px){
+  ::ng-deep .p-toast{
+    width: auto !important;
+  }
+}
